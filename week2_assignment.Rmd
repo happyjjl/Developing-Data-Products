@@ -1,0 +1,14 @@
+---
+title: "week2_assignment"
+author: "jin.jiangli@mayo.edu"
+date: "4/21/2020"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(leaflet)
+mymap <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat = 30.2625926, lng = -81.4453231, popup = 'Mayo Clinic')
+mymap
+```
