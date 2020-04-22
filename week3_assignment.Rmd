@@ -1,0 +1,21 @@
+---
+title: "week3_assignment"
+author: "jin.jiangli@mayo.edu"
+date: "4/22/2020"
+output: ioslides_presentation
+---
+
+## cars' hwy vs cty
+
+```{r cars, echo=FALSE, message=FALSE}
+library(plotly)
+plot_ly(mpg, x = ~cty, y = ~hwy)
+```
+
+## magic 3D
+
+```{r ,echo=FALSE}
+plot_ly(mpg, x = ~cty, y = ~hwy, z = ~cyl)  %>%  
+    add_markers(color = ~cyl)
+```
+
